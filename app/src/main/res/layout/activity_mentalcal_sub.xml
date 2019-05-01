@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 움직이는 고양이 이미지를 겹치기 위해 FrameLayout 사용-->
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/blackboard">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="55dp"
+        android:id="@+id/liftingCat">
+    </LinearLayout>
+
+
+    <!-- 문제를 표시하는 TextView, 정답 입력 EditText 구성-->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="80dp"
+        android:paddingLeft="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="40dp"
+                android:text="opnd1"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:id="@+id/txtOpnd1"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="40dp"
+                android:textColor="#ffffff"
+                android:text="oprt"
+                android:id="@+id/txtOprt"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="40dp"
+                android:textColor="#ffffff"
+                android:text="opnd2"
+                android:textStyle="bold"
+                android:id="@+id/txtOpnd2"/>
+        </LinearLayout>
+
+        <!-- 정답을 입력하는 버튼 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+            <LinearLayout
+                android:layout_width="200dp"
+                android:layout_height="100dp"
+                android:background="@drawable/postit"
+                android:gravity="center">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="="
+                    android:textSize="40dp"/>
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="정답판"
+                    android:background="@null"
+                    android:inputType="number"
+                    android:textSize="40dp"
+                    android:layout_gravity="center"
+                    android:id="@+id/editAnswer"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="13"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn2"
+            android:padding="0dp"
+            android:text="입  력"
+            android:textColor="#deffffff"
+            android:textSize="30dp"
+            android:id="@+id/btnAnswer"
+            android:layout_weight="1"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+</FrameLayout>

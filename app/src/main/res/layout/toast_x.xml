@@ -1,0 +1,21 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/toast_x"
+    android:orientation="vertical"
+    android:background="@drawable/toast_x">
+
+    <TextView
+        android:layout_centerInParent="true"
+        android:id="@+id/toast_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="100dp"
+        android:padding="10dp"
+        android:textStyle="bold"
+        android:layout_marginRight="90dp"
+        android:textColor="#ffffff"/>
+
+
+</RelativeLayout>
